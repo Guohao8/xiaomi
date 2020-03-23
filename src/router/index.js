@@ -8,6 +8,7 @@ const Home = () => import('views/home/Home')
 const Index = () => import('views/home/Index')
 const Order =() => import('views/order/Order')
 const Detail = () => import('views/detail/Detail')
+const AliPay = () => import ('views/alipay/AliPay')
 const OrderPay =() => import('views/order/OrderPay')
 const Product = () => import('views/product/Product')
 const OrderList =() => import('views/order/OrderList')
@@ -60,6 +61,11 @@ const routes = [
         path:'/pay',
         name:'order-pay',
         component:OrderPay
+      },
+      {
+        path:'/alipay',
+        name:'alipay',
+        component:AliPay
       }
     ]
   }
