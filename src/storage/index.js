@@ -1,7 +1,6 @@
 const STORAGE_KEY = 'mall'
 
 export default {
-
   //存储值
   setItem(key,value,module_name){
     if(module_name){
