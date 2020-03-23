@@ -5,13 +5,13 @@ export default {
   //存储值
   setItem(key,value,module_name){
     if(module_name){
-      let val = this.getItem()
+      let val = this.getItem(module_name)
       val[key] = value
       this.setItem(module_name,val)
     }else{
       let val = this.getStorage()
       val[key] = value
-      window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val))
+      window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(val))
     }
   },
 
@@ -39,4 +39,5 @@ export default {
     }
     window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val))
   }
+
 }

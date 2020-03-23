@@ -5,9 +5,9 @@ module.exports = {
         'assets' : '@/assets',
         'api' : '@/api',
         'components' : '@/components',
-        'storage' : '@/storage',
         'views' : '@/views',
         'util' : '@/util',
+        'storage' : '@/storage'
       }
     }
   },
