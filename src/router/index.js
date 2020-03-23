@@ -3,15 +3,15 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const Cart = () => import(views/cart/Cart)
-const Home = () => import(views/home/Home)
-const Index = () => import(views/home/Index)
-const Order =() => import(views/order/Order)
-const Detail = () => import(views/detail/Detail)
-const OrderPay =() => import(views/order/OrderPay)
-const Product = () => import(views/product/Product)
-const OrderList =() => import(views/order/OrderList)
-const OrderConfirm =() => import(views/order/OrderConfirm)
+const Cart = () => import('views/cart/Cart')
+const Home = () => import('views/home/Home')
+const Index = () => import('views/home/Index')
+const Order =() => import('views/order/Order')
+const Detail = () => import('views/detail/Detail')
+const OrderPay =() => import('views/order/OrderPay')
+const Product = () => import('views/product/Product')
+const OrderList =() => import('views/order/OrderList')
+const OrderConfirm =() => import('views/order/OrderConfirm')
 
 const routes = [
   {

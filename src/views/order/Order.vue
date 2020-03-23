@@ -1,7 +1,7 @@
 <template>
   <div>
     <order-header/>
-    <router-view></rotuter-view>
+     <router-view></router-view>
     <order-footer/>
   </div>
 </template>
