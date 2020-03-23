@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name:"Detail"
+  name:"OrderFooter"
 }
 </script>
 

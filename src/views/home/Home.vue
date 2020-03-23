@@ -1,5 +1,6 @@
 <template>
   <div>
+    zsx
     <nav-header/>
     <router-view></router-view>
     <nav-footer/>
