@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import Storage from 'storage/index'
 import NavFooter from 'components/nav/NavFooter'
 import NavHeader from 'components/nav/NavHeader'
 export default {
