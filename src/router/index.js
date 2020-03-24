@@ -7,6 +7,7 @@ const Cart = () => import('views/cart/Cart')
 const Home = () => import('views/home/Home')
 const Index = () => import('views/home/Index')
 const Order =() => import('views/order/Order')
+const Login = () => import('views/login/Login')
 const Detail = () => import('views/detail/Detail')
 const AliPay = () => import ('views/alipay/AliPay')
 const OrderPay =() => import('views/order/OrderPay')
@@ -68,6 +69,11 @@ const routes = [
         component:AliPay
       }
     ]
+  },
+  {
+    path:'/login',
+    name:'login',
+    component: Login
   }
 ]
 
