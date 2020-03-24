@@ -17,8 +17,5 @@ export default {
     NavFooter,
     NavHeader,
  },
- mounted() {
-   storage.setItem('zsx',{a:1},'user')
- },
 }
 </script>
