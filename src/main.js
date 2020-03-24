@@ -9,7 +9,8 @@ import App from './App.vue'
 
 
   //根绝前端的跨域方式做调整
-  axios.defaults.baseURL = '/api'
+  axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5e79db138b0af2667e527b2f/mall'
+  // axios.defaults.baseURL = '/api'
   axios.defaults.timeout = '8000'
 
   /*根据环境变量获取不同的请求地址
@@ -27,11 +28,12 @@ import App from './App.vue'
     }
   })
 
-Vue.use(axios,vueAxios)
+Vue.use(vueAxios,axios)
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
+  axios,
   render: h => h(App)
 }).$mount('#app')
