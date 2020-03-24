@@ -10,11 +10,15 @@
 <script>
 import NavFooter from 'components/nav/NavFooter'
 import NavHeader from 'components/nav/NavHeader'
+import storage from 'storage/index'
 export default {
   name: 'Home',
   components:{
     NavFooter,
-    NavHeader
-  }
+    NavHeader,
+ },
+ mounted() {
+   storage.setItem('zsx',{a:1},'user')
+ },
 }
 </script>

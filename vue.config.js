@@ -7,7 +7,7 @@ module.exports = {
         'components' : '@/components',
         'views' : '@/views',
         'util' : '@/util',
-        'storage' : '@/../src/storage'
+        'storage' : '@/storage',
       }
     }
   },
