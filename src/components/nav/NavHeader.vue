@@ -94,7 +94,7 @@ export default {
             width: 110px;
             height: 55px;
             &:before{
-              content:''; 
+              content:'';
               @include bgImg(55px,55px,'~assets/img/imgs/mi-logo.png',55px);
               transition: margin .2s;
             }
@@ -121,9 +121,6 @@ export default {
             margin-right: 20px;
             span{
               cursor: pointer;
-            }
-            &:hover{
-
             }
           }
         }
