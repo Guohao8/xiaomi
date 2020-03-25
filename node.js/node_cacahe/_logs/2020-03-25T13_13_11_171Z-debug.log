@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'F:\\node.js\\node.exe',
+1 verbose cli   'F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'vue-awesome-swiper',
+1 verbose cli   '@3.1.3',
+1 verbose cli   '--save-dev'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.16.1
+4 verbose npm-session a35d78c32e91cb83
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/vue-awesome-swiper 1152ms (from cache)
+8 silly pacote tag manifest for vue-awesome-swiper@latest fetched in 1184ms
+9 timing stage:rollbackFailedOptional Completed in 0ms
+10 timing stage:runTopLevelLifecycles Completed in 2020ms
+11 verbose stack Error: Invalid tag name "@3.1.3": Tags may not have any characters that encodeURIComponent encodes.
+11 verbose stack     at invalidTagName (F:\node.js\node_modules\npm\node_modules\npm-package-arg\npa.js:91:15)
+11 verbose stack     at fromRegistry (F:\node.js\node_modules\npm\node_modules\npm-package-arg\npa.js:296:13)
+11 verbose stack     at resolve (F:\node.js\node_modules\npm\node_modules\npm-package-arg\npa.js:81:12)
+11 verbose stack     at npa (F:\node.js\node_modules\npm\node_modules\npm-package-arg\npa.js:52:10)
+11 verbose stack     at F:\node.js\node_modules\npm\lib\install\deps.js:227:14
+11 verbose stack     at F:\node.js\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+11 verbose stack     at Array.forEach (<anonymous>)
+11 verbose stack     at F:\node.js\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+11 verbose stack     at Array.forEach (<anonymous>)
+11 verbose stack     at asyncMap (F:\node.js\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+11 verbose stack     at exports.getAllMetadata (F:\node.js\node_modules\npm\lib\install\deps.js:224:3)
+11 verbose stack     at Installer.loadArgMetadata (F:\node.js\node_modules\npm\lib\install.js:366:3)
+11 verbose stack     at F:\node.js\node_modules\npm\lib\install.js:701:16
+11 verbose stack     at F:\node.js\node_modules\npm\lib\install\read-shrinkwrap.js:33:16
+11 verbose stack     at tryCatcher (F:\node.js\node_modules\npm\node_modules\bluebird\js\release\util.js:16:23)
+11 verbose stack     at Promise._settlePromiseFromHandler (F:\node.js\node_modules\npm\node_modules\bluebird\js\release\promise.js:517:31)
+12 verbose cwd F:\VS Code\webPack\xiaomi
+13 verbose Windows_NT 10.0.18362
+14 verbose argv "F:\\node.js\\node.exe" "F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js" "install" "vue-awesome-swiper" "@3.1.3" "--save-dev"
+15 verbose node v12.16.1
+16 verbose npm  v6.13.4
+17 error code EINVALIDTAGNAME
+18 error Invalid tag name "@3.1.3": Tags may not have any characters that encodeURIComponent encodes.
+19 verbose exit [ 1, true ]
