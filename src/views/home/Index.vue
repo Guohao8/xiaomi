@@ -3,8 +3,8 @@
     <div class="container">
       <div class="swiper-box">
         <swiper :options="swiperOptions">
-          <swiper-slide v-for="item in slideList" :key="item.id">
-            <a :href="'/prouct/'+item.id" ><img :src="item.img"/></a>
+          <swiper-slide v-for=" item in slideList" :key="item.id">
+            <a :href="'/prouct/'+item.id"><img :src="item.img"></a>
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
           <div class="swiper-button-prev" slot="button-prev"></div>
@@ -50,27 +50,27 @@ export default {
       slideList:[
         {
           id : '42',
-          img : '~assets/img/imgs/slider/silde-1.jpg'
+          img : require('../../assets/img/imgs/slider/slide-1.jpg')
         },
         {
           id : '45',
-          img : '~assets/img/imgs/slider/silde-2.jpg'
+          img : require('../../assets/img/imgs/slider/slide-2.jpg')
         },
         {
           id : '46',
-          img : '~assets/img/imgs/slider/silde-3.jpg'
+          img : require('../../assets/img/imgs/slider/slide-3.jpg')
+        },
+        {
+          id : '21',
+          img : require('../../assets/img/imgs/slider/slide-4.jpg')
         },
         {
           id : '',
-          img : '~assets/img/imgs/slider/silde-4.jpg'
+          img : require('../../assets/img/imgs/slider/slide-5.jpg')
         },
-        {
-          id : '',
-          img : '~assets/img/imgs/slider/silde-5.jpg'
-        },
-      ]
-    }
-  }
+      ],
+    } 
+  },
 }
 </script>
 
