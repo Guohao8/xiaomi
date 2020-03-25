@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'F:\\node.js\\node.exe',
+1 verbose cli   'F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'prev'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.16.1
+4 verbose run-script [ 'prev' ]
+5 info lifecycle xiaomi@0.1.0~prev: xiaomi@0.1.0
+6 verbose lifecycle xiaomi@0.1.0~prev: unsafe-perm in lifecycle true
+7 verbose lifecycle xiaomi@0.1.0~prev: PATH: F:\node.js\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;F:\VS Code\webPack\xiaomi\node_modules\.bin;F:\java\jdk\bin;F:\java\jdk\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\maven\apache-maven-3.6.1\bin;F:\node.js;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts\PHP_CodeSniffer-3.5.3\bin;E:\git\Git\cmd\F:\node.js\node_global\E:\git\bin;F:\node.js\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;F:\Microsoft VS Code\bin;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts\PHP_CodeSniffer-3.5.3\bin;F:\node.js\node_global;E:\git\bin;C:\Users\Dell\AppData\Roaming\npm
+8 verbose lifecycle xiaomi@0.1.0~prev: CWD: F:\VS Code\webPack\xiaomi
+9 silly lifecycle xiaomi@0.1.0~prev: Args: [ '/d /s /c', 'vue-cli-service prev --mode = prev' ]
+10 silly lifecycle xiaomi@0.1.0~prev: Returned: code: 1  signal: null
+11 info lifecycle xiaomi@0.1.0~prev: Failed to exec prev script
+12 verbose stack Error: xiaomi@0.1.0 prev: `vue-cli-service prev --mode = prev`
+12 verbose stack Exit status 1
+12 verbose stack     at EventEmitter.<anonymous> (F:\node.js\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+12 verbose stack     at EventEmitter.emit (events.js:311:20)
+12 verbose stack     at ChildProcess.<anonymous> (F:\node.js\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+12 verbose stack     at ChildProcess.emit (events.js:311:20)
+12 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+12 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+13 verbose pkgid xiaomi@0.1.0
+14 verbose cwd F:\VS Code\webPack\xiaomi
+15 verbose Windows_NT 10.0.18362
+16 verbose argv "F:\\node.js\\node.exe" "F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js" "run" "prev"
+17 verbose node v12.16.1
+18 verbose npm  v6.13.4
+19 error code ELIFECYCLE
+20 error errno 1
+21 error xiaomi@0.1.0 prev: `vue-cli-service prev --mode = prev`
+21 error Exit status 1
+22 error Failed at the xiaomi@0.1.0 prev script.
+22 error This is probably not a problem with npm. There is likely additional logging output above.
+23 verbose exit [ 1, true ]

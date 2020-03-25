@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'F:\\node.js\\node.exe',
+1 verbose cli   'F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'test'
+1 verbose cli ]
+2 info using npm@6.13.4
+3 info using node@v12.16.1
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle xiaomi@0.1.0~pretest: xiaomi@0.1.0
+6 info lifecycle xiaomi@0.1.0~test: xiaomi@0.1.0
+7 verbose lifecycle xiaomi@0.1.0~test: unsafe-perm in lifecycle true
+8 verbose lifecycle xiaomi@0.1.0~test: PATH: F:\node.js\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;F:\VS Code\webPack\xiaomi\node_modules\.bin;F:\java\jdk\bin;F:\java\jdk\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\maven\apache-maven-3.6.1\bin;F:\node.js;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts\PHP_CodeSniffer-3.5.3\bin;E:\git\Git\cmd\F:\node.js\node_global\E:\git\bin;F:\node.js\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;F:\Microsoft VS Code\bin;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts;F:\PhpStudy20180211\PHPTutorial\php\php-7.1.13-nts\PHP_CodeSniffer-3.5.3\bin;F:\node.js\node_global;E:\git\bin;C:\Users\Dell\AppData\Roaming\npm
+9 verbose lifecycle xiaomi@0.1.0~test: CWD: F:\VS Code\webPack\xiaomi
+10 silly lifecycle xiaomi@0.1.0~test: Args: [ '/d /s /c', 'vue-cli-service test --mode = test' ]
+11 silly lifecycle xiaomi@0.1.0~test: Returned: code: 1  signal: null
+12 info lifecycle xiaomi@0.1.0~test: Failed to exec test script
+13 verbose stack Error: xiaomi@0.1.0 test: `vue-cli-service test --mode = test`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (F:\node.js\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:311:20)
+13 verbose stack     at ChildProcess.<anonymous> (F:\node.js\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:311:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+14 verbose pkgid xiaomi@0.1.0
+15 verbose cwd F:\VS Code\webPack\xiaomi
+16 verbose Windows_NT 10.0.18362
+17 verbose argv "F:\\node.js\\node.exe" "F:\\node.js\\node_modules\\npm\\bin\\npm-cli.js" "run" "test"
+18 verbose node v12.16.1
+19 verbose npm  v6.13.4
+20 error code ELIFECYCLE
+21 error errno 1
+22 error xiaomi@0.1.0 test: `vue-cli-service test --mode = test`
+22 error Exit status 1
+23 error Failed at the xiaomi@0.1.0 test script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
