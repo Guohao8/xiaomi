@@ -134,7 +134,7 @@
       </div>
       <div class="ads-box">
         <a :href="'/product/'+item.id" v-for="(item,index) in adsList" :key="index">
-          <img :src="item.img ">
+          <img v-lazy="item.img">
         </a>
       </div>
       <div class="banner-box">
@@ -162,7 +162,7 @@
                 <div class="item-info">
                   <h3>{{item.name}}</h3>
                   <p>{{item.text}}</p>
-                  <p class="price">{{item.price}}</p>
+                  <p class="price" @click="addCart(item.id)">{{item.price}}</p>
                 </div>
               </div>
             </div>
@@ -176,7 +176,9 @@
             sureText="查看购物车"
             btnType="1"
             modalType="middle"
-            :showModal="true">
+            :showModal="showModal"
+            @submit="goToCart"
+            @cancel="showModal = false">
       <p slot="body">商品添加成功</p>
     </modal>
   </div>
@@ -443,6 +445,7 @@ export default {
           },
         ]
       ],
+      showModal: false
     }
   },
   mounted() {
@@ -459,6 +462,12 @@ export default {
         this.phoneList = [res.list.slice(0,4),res.list.slice(4,8)]
       })
     }*/
+    addCart( ){
+      this.showModal = true
+    },
+    goToCart(){
+      this.$router.push('/cart')
+    },
   },
 }
 </script>
@@ -594,7 +603,8 @@ export default {
               transition: transform .3s;
               cursor: pointer;
               &:hover{
-                transform: scale(1.03);
+                transform: scale(1.02);
+                box-shadow: 0 3px 3px 3px rgba(0,0,0,0.08);
               }
               span{
                 display: inline-block;
