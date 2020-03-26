@@ -1,0 +1,39 @@
+.btn{
+  display: inline-block;
+  width: 110px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $colorA;
+  color: $colorG;
+  border: none;
+  cursor: pointer;
+}
+.btn-default{
+  background-color: $colorD;
+  color: #fff;
+}
+.btn-small{
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.btn-medium{
+  width: 202px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+}
+.btn-big{
+  width: 300px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 16px;
+}
+.btn-group{
+  .btn{
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0;
+    }}
+}

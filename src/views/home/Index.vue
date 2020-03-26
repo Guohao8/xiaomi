@@ -171,11 +171,20 @@
        </div>
       </div>
     <service-bar/>
+    <modal 
+            title="提示"
+            sureText="查看购物车"
+            btnType="1"
+            modalType="middle"
+            :showModal="true">
+      <p slot="body">商品添加成功</p>
+    </modal>
   </div>
 </template>
 
 <script>
 import ServiceBar from 'components/service/ServiceBar'
+import Modal from 'components/modal/Modal'
 import { swiper, swiperSlide  } from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 export default {
@@ -184,6 +193,7 @@ export default {
     swiper,
     ServiceBar,
     swiperSlide,
+    Modal,
   },
   data(){
     return {
@@ -432,8 +442,23 @@ export default {
             price: '2999元'
           },
         ]
-      ]
+      ],
     }
+  },
+  mounted() {
+    // this.init()
+  },
+  methods: {
+    /*init(){
+      this.axios.get('/products',{
+        params :{
+          categoryId: 100012,
+          pageSize: 8
+        }
+      }).then((res) =>{
+        this.phoneList = [res.list.slice(0,4),res.list.slice(4,8)]
+      })
+    }*/
   },
 }
 </script>
@@ -566,11 +591,25 @@ export default {
               height: 302px;
               background-color: $colorG;
               text-align: center;
+              transition: transform .3s;
+              cursor: pointer;
+              &:hover{
+                transform: scale(1.03);
+              }
+              span{
+                display: inline-block;
+                width: 67px;
+                height: 24px;
+                line-height: 24px;
+                color: #fff;
+                background-color: #7ECF68;
+                border-radius: 10px;
+                margin-top: 10px;
+              }
               .item-img{
                 img{
                   width: 100%;
                   height: 195px;
-                  margin-bottom: 10px;
                   }
                 }
               .item-info{

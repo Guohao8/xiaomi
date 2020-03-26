@@ -374,6 +374,7 @@ export default {
               width: 264px;
               height: 50px;
               padding-left: 14px;
+              border-top: 1px solid #E0E0E0;
             }
             a{
               @include bgImg(18px,18px,'~assets/img/imgs/icon-search.png' );

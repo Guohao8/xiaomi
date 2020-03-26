@@ -11,6 +11,8 @@
 
 </script>
 
-<style>
- @import '~assets/css/reset.scss'
+<style lang="scss">
+ @import '~assets/css/reset.scss';
+ @import '~assets/css/config.scss';
+ @import '~assets/css/button.scss';
 </style>
