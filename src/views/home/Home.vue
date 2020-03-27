@@ -21,9 +21,6 @@ export default {
    }
  },
  mounted() {
-   this.axios.get('/user/login').then((res) =>{
-     this.res = res
-   })
  },
 }
 </script>

@@ -9,8 +9,8 @@
           <a href="javascript:;">协议规则</a>
         </div>
         <div class="topbar-user">
-          <a href="javascript:;">登录</a>
-          <a href="javascript:;">注册</a>
+          <a href="javascript:;" @click="login">登录</a>
+          <a href="javascript:;" @click="logout">退出</a>
           <a href="javascript:;" class="my-cart"><span class="icon-cart"></span>购物车</a></a>
         </div>
       </div>
@@ -183,17 +183,17 @@ export default {
       }
     },
     mounted(){
-      this.getProductList();
+     /* this.getProductList();
       let params = this.$route.params;
       if(params && params.from == 'login'){
         this.getCartCount();
-      }
+      }*/
     },
     methods:{
       login(){
         this.$router.push('/login');
       },
-      getProductList(){
+      /*getProductList(){
         this.axios.get('/products',{
           params:{
             categoryId:'100012',
@@ -202,7 +202,7 @@ export default {
         }).then((res)=>{
           this.phoneList = res.list;
         })
-      },
+      },*/
       getCartCount(){
         this.axios.get('/carts/products/sum').then((res=0)=>{
           this.$store.dispatch('saveCartCount',res);
@@ -246,6 +246,7 @@ export default {
         background-color: $colorA;
         text-align: center;
         color: #ffffff;
+        margin-right: 0;
         .icon-cart{
           @include bgImg(16px,12px,'~assets/img/imgs/icon-cart-checked.png' );
           margin-right: 5px;

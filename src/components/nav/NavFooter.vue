@@ -5,10 +5,10 @@
       <p>小米商城</p>
     </div>
     <div class="footer-link">
-      <a href="">WeiBo</a><span>|</span>
-      <a href="">Github</a><span>|</span>
-      <a href="">WeChat</a><span>|</span>
-      <a href="">Twitter</a>
+      <a href="" target="_blank">WeiBo</a><span>|</span>
+      <a href="" target="_blank">Github</a><span>|</span>
+      <a href="" target="_blank">WeChat</a><span>|</span>
+      <a href="" target="_blank">Twitter</a>
     </div>
     <div class="copyright"><span class="domian">© mi.com</span> 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号
 （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 </div>
