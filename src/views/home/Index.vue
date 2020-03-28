@@ -125,7 +125,7 @@
         </div>
         <swiper :options="swiperOptions">
           <swiper-slide v-for=" item in slideList" :key="item.id">
-            <a :href="'/prouct/'+item.id"><img :src="item.img"></a>
+            <a :href="'/product/'+item.id"><img :src="item.img"></a>
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
           <div class="swiper-button-prev" slot="button-prev"></div>
@@ -171,7 +171,7 @@
        </div>
       </div>
     <service-bar/>
-    <modal 
+    <modal
             title="提示"
             sureText="查看购物车"
             btnType="1"
@@ -217,23 +217,23 @@ export default {
       },
       slideList:[
         {
-          id : '42',
+          id : 42,
           img : require('../../assets/img/imgs/slider/slide-1.jpg')
         },
         {
-          id : '45',
+          id : 45,
           img : require('../../assets/img/imgs/slider/slide-2.jpg')
         },
         {
-          id : '46',
+          id : 46,
           img : require('../../assets/img/imgs/slider/slide-3.jpg')
         },
         {
-          id : '21',
+          id : 21,
           img : require('../../assets/img/imgs/slider/slide-4.jpg')
         },
         {
-          id : '',
+          id : 20,
           img : require('../../assets/img/imgs/slider/slide-5.jpg')
         },
       ],
@@ -519,7 +519,7 @@ export default {
               position : absolute;
               top: 0;
               left: 264px;
-              box-shadow: 6px 7px 6px 0px rgba(0,0,0,0.11);
+              box-shadow: 6px 7px 6px  rgba(0,0,0,0.11);
               ul{
                 display: flex;
                 justify-content: space-between;
